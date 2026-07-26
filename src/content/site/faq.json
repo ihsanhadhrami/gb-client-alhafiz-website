@@ -1,0 +1,42 @@
+[
+  {
+    "question": {
+      "ms": "Di manakah lokasi kedai Al Hafiz Nur Al-Madinah?",
+      "en": "Where is Al Hafiz Nur Al-Madinah located?"
+    },
+    "answer": {
+      "ms": "Kami terletak di Eco Grandeur, Puncak Alam, Selangor. Sila lihat halaman Kunjungi Kami untuk arah dan pautan Google Maps.",
+      "en": "We are located in Eco Grandeur, Puncak Alam, Selangor. See our Visit Us page for directions and a Google Maps link."
+    }
+  },
+  {
+    "question": {
+      "ms": "Apakah waktu operasi kedai?",
+      "en": "What are your opening hours?"
+    },
+    "answer": {
+      "ms": "Kedai kami dibuka setiap hari. Waktu operasi terkini dipaparkan di bahagian bawah setiap halaman dan di halaman Kunjungi Kami.",
+      "en": "We are open every day. Our current opening hours are shown in the footer of every page and on the Visit Us page."
+    }
+  },
+  {
+    "question": {
+      "ms": "Adakah produk anda asli dan diimport?",
+      "en": "Are your products authentic and imported?"
+    },
+    "answer": {
+      "ms": "Ya. Wangian Arab, kurma dan barangan Timur Tengah kami diimport terus daripada sumber yang dipercayai dan dipilih dengan teliti untuk kualiti.",
+      "en": "Yes. Our Arabic perfumes, dates and Middle Eastern goods are imported directly from trusted sources and hand-selected for quality."
+    }
+  },
+  {
+    "question": {
+      "ms": "Bolehkah saya menempah melalui WhatsApp?",
+      "en": "Can I place an order via WhatsApp?"
+    },
+    "answer": {
+      "ms": "Boleh. Hubungi kami melalui WhatsApp atau telefon untuk pertanyaan produk dan tempahan. Butiran terdapat di halaman Hubungi.",
+      "en": "Yes. Reach us on WhatsApp or by phone for product enquiries and orders. Details are on the Contact page."
+    }
+  }
+]

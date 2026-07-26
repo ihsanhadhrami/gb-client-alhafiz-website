@@ -20,7 +20,15 @@
       "Bash(node scripts/remove-logo-bg.js)",
       "Bash(powershell -Command \"Stop-Process -Id 36916 -Force -ErrorAction SilentlyContinue\")",
       "Bash(git remote *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git restore *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(node -e \"const {z}=require\\('zod'\\); console.log\\('email:',typeof z.email, '| url:',typeof z.url, '| enum:',typeof z.enum\\); const s=z.object\\({a:z.email\\(\\),b:z.url\\(\\)}\\); const r=s.safeParse\\({a:'x@y.com',b:'https://a.com'}\\); console.log\\('ok:',r.success\\); const bad=s.safeParse\\({a:'nope',b:'nope'}\\); console.log\\('issues path/msg:', bad.error.issues.map\\(i=>i.path+':'+i.message\\)\\); const en=z.enum\\(['ms','en']\\); console.log\\('enum ok:', en.safeParse\\('ms'\\).success\\);\")",
+      "Bash(node -e \"const {z}=require\\('zod'\\); const locales=Object.freeze\\(['ms','en']\\); const en=z.enum\\(locales\\); console.log\\('readonly enum:', en.safeParse\\('en'\\).success\\); const shape=Object.fromEntries\\(locales.map\\(l=>[l,z.string\\(\\).min\\(1\\)]\\)\\); const lt=z.object\\(shape\\); console.log\\('localized ok:', lt.safeParse\\({ms:'a',en:'b'}\\).success, '| missing:', lt.safeParse\\({ms:'a'}\\).success\\);\")",
+      "Bash(node -e \"const {z}=require\\('zod'\\); console.log\\('z.iso:', typeof z.iso, '| z.iso.date:', z.iso && typeof z.iso.date\\); try{console.log\\('date ok:', z.iso.date\\(\\).safeParse\\('2026-07-01'\\).success, '| bad:', z.iso.date\\(\\).safeParse\\('nope'\\).success\\);}catch\\(e\\){console.log\\('ERR', e.message\\);}\")",
+      "Bash(npx tsc *)",
+      "Bash(npx prettier *)"
     ]
   }
 }

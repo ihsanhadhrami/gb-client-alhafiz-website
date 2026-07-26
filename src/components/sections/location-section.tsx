@@ -1,15 +1,15 @@
-import { getTranslations, getLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { MapPin, Clock, Navigation } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
 import { getBusinessInfo } from "@/lib/content/business";
 import { formatHoursSummary } from "@/lib/hours";
-import type { AppLocale } from "@/i18n/routing";
+import { getAppLocale } from "@/i18n/locale";
 
 export async function LocationSection() {
   const t = await getTranslations("Home");
   const tCommon = await getTranslations("Common");
-  const locale = (await getLocale()) as AppLocale;
+  const locale = await getAppLocale();
   const business = getBusinessInfo();
   const hours = formatHoursSummary(business.hours, locale);
 

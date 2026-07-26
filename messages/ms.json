@@ -24,7 +24,9 @@
     "exploreProducts": "Terokai Koleksi",
     "visitStore": "Kunjungi Kedai",
     "openingHours": "Waktu Operasi",
-    "ourLocation": "Lokasi Kami"
+    "ourLocation": "Lokasi Kami",
+    "backHome": "Kembali ke Utama",
+    "learnMore": "Ketahui Lebih Lanjut"
   },
   "Home": {
     "heroEyebrow": "Kedai Runcit Premium",
@@ -56,11 +58,83 @@
       "description": "Terletak strategik di Eco Grandeur dengan tempat letak kereta yang mudah."
     }
   },
+  "About": {
+    "metaTitle": "Tentang Kami",
+    "metaDescription": "Ketahui tentang Al Hafiz Nur Al-Madinah — peruncit premium wangian Arab, kurma dan barangan Timur Tengah di Puncak Alam, Selangor.",
+    "title": "Tentang Al Hafiz Nur Al-Madinah",
+    "subtitle": "Kedai runcit premium yang membawa keaslian Timur Tengah ke Eco Grandeur, Puncak Alam.",
+    "storyTitle": "Kisah Kami",
+    "story1": "Al Hafiz Nur Al-Madinah ditubuhkan untuk mendekatkan barangan asli Timur Tengah kepada masyarakat Malaysia — daripada wangian Arab tahan lama dan kurma pilihan sehinggalah makanan istimewa serta keperluan Islamik harian.",
+    "story2": "Setiap barangan di rak kami diperoleh terus daripada pembekal yang dipercayai dan dipilih untuk kualiti, agar setiap kunjungan terasa seperti menjejaki pasar-pasar Madinah dan sekitarnya.",
+    "valuesTitle": "Pegangan Kami"
+  },
+  "Products": {
+    "metaTitle": "Produk",
+    "metaDescription": "Terokai koleksi kami: wangian Arab, kurma premium, makanan Timur Tengah, produk Islamik dan hadiah istimewa.",
+    "title": "Koleksi Kami",
+    "subtitle": "Terokai rangkaian barangan asli Timur Tengah yang kami pilih dengan teliti.",
+    "itemsCount": "{count, plural, =0 {Akan datang} other {# barangan}}",
+    "viewCategory": "Lihat koleksi"
+  },
+  "ProductCategory": {
+    "backToProducts": "Semua koleksi",
+    "comingSoon": "Barangan dalam koleksi ini akan datang. Kunjungi kedai kami atau hubungi untuk pertanyaan.",
+    "inThisCollection": "Dalam koleksi ini"
+  },
+  "VisitUs": {
+    "metaTitle": "Kunjungi Kami",
+    "metaDescription": "Cari Al Hafiz Nur Al-Madinah di Eco Grandeur, Puncak Alam, Selangor. Waktu operasi, arah dan butiran hubungan.",
+    "title": "Kunjungi Kedai Kami",
+    "subtitle": "Kami mengalu-alukan kunjungan anda. Berikut segala yang anda perlukan untuk menemui kami.",
+    "addressTitle": "Alamat",
+    "hoursTitle": "Waktu Operasi",
+    "haveQuestions": "Ada pertanyaan sebelum berkunjung?",
+    "seeFaq": "Lihat Soalan Lazim"
+  },
+  "Contact": {
+    "metaTitle": "Hubungi",
+    "metaDescription": "Hubungi Al Hafiz Nur Al-Madinah — telefon, WhatsApp atau e-mel kami untuk pertanyaan produk dan tempahan.",
+    "title": "Hubungi Kami",
+    "subtitle": "Hubungi kami untuk pertanyaan produk, tempahan atau apa sahaja — kami sedia membantu.",
+    "phoneLabel": "Telefon",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "E-mel",
+    "followTitle": "Ikuti Kami",
+    "note": "Buat masa ini kami menerima tempahan dan pertanyaan melalui telefon dan WhatsApp. Kunjungi kedai kami untuk pengalaman sepenuhnya."
+  },
+  "Faq": {
+    "metaTitle": "Soalan Lazim",
+    "metaDescription": "Jawapan kepada soalan lazim tentang Al Hafiz Nur Al-Madinah — lokasi, waktu operasi, produk dan tempahan.",
+    "title": "Soalan Lazim",
+    "subtitle": "Segala yang anda ingin tahu sebelum berkunjung atau membuat tempahan."
+  },
+  "Blog": {
+    "metaTitle": "Blog",
+    "metaDescription": "Kisah, panduan dan catatan tentang wangian Arab, kurma dan barangan Timur Tengah daripada Al Hafiz Nur Al-Madinah.",
+    "title": "Dari Kedai Kami",
+    "subtitle": "Panduan dan kisah tentang wangian Arab, kurma dan barangan Timur Tengah.",
+    "empty": "Belum ada catatan — kunjungi semula tidak lama lagi.",
+    "readingTime": "Bacaan {minutes} minit",
+    "backToBlog": "Semua catatan",
+    "relatedTitle": "Bacaan berkaitan",
+    "tagsTitle": "Tag"
+  },
   "Footer": {
     "tagline": "Wangian Arab, kurma premium & produk Islamik pilihan.",
     "quickLinks": "Pautan Pantas",
     "contactUs": "Hubungi Kami",
     "followUs": "Ikuti Kami",
+    "moreLinks": "Lain-lain",
     "rights": "Hak cipta terpelihara."
+  },
+  "Error": {
+    "title": "Sesuatu tidak kena",
+    "description": "Ralat luar jangka telah berlaku. Sila cuba lagi, atau kembali ke halaman utama.",
+    "retry": "Cuba lagi"
+  },
+  "NotFound": {
+    "title": "Halaman tidak dijumpai",
+    "description": "Halaman yang anda cari tidak wujud atau mungkin telah dialihkan.",
+    "backHome": "Kembali ke Utama"
   }
 }

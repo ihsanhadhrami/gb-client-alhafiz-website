@@ -6,7 +6,7 @@ import { Logo } from "./logo";
 import { MobileNav } from "./mobile-nav";
 import { LocaleSwitcher } from "./locale-switcher";
 import { Button } from "@/components/ui/button";
-import { navItems } from "@/lib/nav-items";
+import { navItems } from "@/config/navigation";
 import { cn } from "@/lib/utils";
 
 export function Header() {

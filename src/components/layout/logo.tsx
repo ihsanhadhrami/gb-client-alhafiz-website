@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
+import { SITE } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 export function Logo({ className }: { className?: string }) {
@@ -8,7 +9,7 @@ export function Logo({ className }: { className?: string }) {
       <span className="relative size-10 shrink-0">
         <Image
           src="/brand/logo.png"
-          alt="Al Hafiz Nur Al-Madinah"
+          alt={SITE.name}
           fill
           sizes="40px"
           className="object-contain"
@@ -16,9 +17,11 @@ export function Logo({ className }: { className?: string }) {
         />
       </span>
       <span className="font-heading text-foreground flex flex-col leading-tight">
-        <span className="text-lg font-semibold tracking-tight sm:text-xl">Al Hafiz</span>
+        <span className="text-lg font-semibold tracking-tight sm:text-xl">
+          {SITE.wordmark.primary}
+        </span>
         <span className="text-muted-foreground text-[0.65rem] font-normal tracking-[0.2em] uppercase">
-          Nur Al-Madinah
+          {SITE.wordmark.secondary}
         </span>
       </span>
     </Link>

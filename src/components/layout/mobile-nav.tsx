@@ -13,7 +13,7 @@ import {
   SheetTitle,
   SheetClose,
 } from "@/components/ui/sheet";
-import { navItems } from "@/lib/nav-items";
+import { navItems } from "@/config/navigation";
 import { cn } from "@/lib/utils";
 
 export function MobileNav() {

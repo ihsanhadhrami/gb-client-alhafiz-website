@@ -1,22 +1,11 @@
-import { getLocale } from "next-intl/server";
 import { getBusinessInfo } from "@/lib/content/business";
 import { pickLocalized } from "@/lib/i18n-content";
-import { SITE_URL } from "@/lib/constants";
-import type { AppLocale } from "@/i18n/routing";
-import type { BusinessHours } from "@/types/business";
-
-const schemaDayNames: Record<BusinessHours["day"], string> = {
-  mon: "Monday",
-  tue: "Tuesday",
-  wed: "Wednesday",
-  thu: "Thursday",
-  fri: "Friday",
-  sat: "Saturday",
-  sun: "Sunday",
-};
+import { SITE } from "@/config/site";
+import { getAppLocale } from "@/i18n/locale";
+import { SCHEMA_DAY_NAMES } from "@/lib/date";
 
 export async function LocalBusinessJsonLd() {
-  const locale = (await getLocale()) as AppLocale;
+  const locale = await getAppLocale();
   const business = getBusinessInfo();
 
   const jsonLd = {
@@ -24,7 +13,7 @@ export async function LocalBusinessJsonLd() {
     "@type": "Store",
     name: business.name,
     description: pickLocalized(business.description, locale),
-    url: SITE_URL,
+    url: SITE.url,
     telephone: business.phone,
     email: business.email,
     priceRange: business.priceRange,
@@ -47,7 +36,7 @@ export async function LocalBusinessJsonLd() {
       .filter((h) => h.open && h.close)
       .map((h) => ({
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: `https://schema.org/${schemaDayNames[h.day]}`,
+        dayOfWeek: `https://schema.org/${SCHEMA_DAY_NAMES[h.day]}`,
         opens: h.open,
         closes: h.close,
       })),

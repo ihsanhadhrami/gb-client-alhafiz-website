@@ -24,7 +24,9 @@
     "exploreProducts": "Explore Collections",
     "visitStore": "Visit Store",
     "openingHours": "Opening Hours",
-    "ourLocation": "Our Location"
+    "ourLocation": "Our Location",
+    "backHome": "Back to Home",
+    "learnMore": "Learn More"
   },
   "Home": {
     "heroEyebrow": "Premium Retail Store",
@@ -56,11 +58,83 @@
       "description": "Conveniently located in Eco Grandeur with easy parking access."
     }
   },
+  "About": {
+    "metaTitle": "About Us",
+    "metaDescription": "Learn about Al Hafiz Nur Al-Madinah — a premium retailer of Arabic perfumes, dates, and Middle Eastern goods in Puncak Alam, Selangor.",
+    "title": "About Al Hafiz Nur Al-Madinah",
+    "subtitle": "A premium retail store bringing the authenticity of the Middle East to Eco Grandeur, Puncak Alam.",
+    "storyTitle": "Our Story",
+    "story1": "Al Hafiz Nur Al-Madinah was founded to bring authentic Middle Eastern goods closer to the Malaysian community — from long-lasting Arabic perfumes and hand-selected dates to specialty foods and everyday Islamic essentials.",
+    "story2": "Every item on our shelves is sourced directly from trusted suppliers and curated for quality, so each visit feels like a trip to the markets of Madinah and beyond.",
+    "valuesTitle": "What We Stand For"
+  },
+  "Products": {
+    "metaTitle": "Products",
+    "metaDescription": "Browse our collections: Arabic perfumes, premium dates, Middle Eastern foods, Islamic products, and specialty gifts.",
+    "title": "Our Collections",
+    "subtitle": "Explore our curated range of authentic Middle Eastern goods.",
+    "itemsCount": "{count, plural, =0 {Coming soon} one {# item} other {# items}}",
+    "viewCategory": "View collection"
+  },
+  "ProductCategory": {
+    "backToProducts": "All collections",
+    "comingSoon": "Products in this collection are coming soon. Visit our store or contact us to enquire.",
+    "inThisCollection": "In this collection"
+  },
+  "VisitUs": {
+    "metaTitle": "Visit Us",
+    "metaDescription": "Find Al Hafiz Nur Al-Madinah in Eco Grandeur, Puncak Alam, Selangor. Opening hours, directions, and contact details.",
+    "title": "Visit Our Store",
+    "subtitle": "We would love to welcome you. Here is everything you need to find us.",
+    "addressTitle": "Address",
+    "hoursTitle": "Opening Hours",
+    "haveQuestions": "Have a question before visiting?",
+    "seeFaq": "See our FAQ"
+  },
+  "Contact": {
+    "metaTitle": "Contact",
+    "metaDescription": "Get in touch with Al Hafiz Nur Al-Madinah — call, WhatsApp, or email us for product enquiries and orders.",
+    "title": "Get in Touch",
+    "subtitle": "Reach out for product enquiries, orders, or anything else — we are happy to help.",
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email",
+    "followTitle": "Follow Us",
+    "note": "We currently take orders and enquiries by phone and WhatsApp. Visit our store for the full in-person experience."
+  },
+  "Faq": {
+    "metaTitle": "Frequently Asked Questions",
+    "metaDescription": "Answers to common questions about Al Hafiz Nur Al-Madinah — location, opening hours, products, and orders.",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you might want to know before visiting or ordering."
+  },
+  "Blog": {
+    "metaTitle": "Blog",
+    "metaDescription": "Stories, guides, and notes on Arabic perfumes, dates, and Middle Eastern goods from Al Hafiz Nur Al-Madinah.",
+    "title": "From the Store",
+    "subtitle": "Guides and stories on Arabic perfumes, dates, and Middle Eastern goods.",
+    "empty": "No posts yet — check back soon.",
+    "readingTime": "{minutes} min read",
+    "backToBlog": "All posts",
+    "relatedTitle": "Related reading",
+    "tagsTitle": "Tags"
+  },
   "Footer": {
     "tagline": "Arabic perfumes, premium dates & curated Islamic goods.",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "followUs": "Follow Us",
+    "moreLinks": "More",
     "rights": "All rights reserved."
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again, or head back to the homepage.",
+    "retry": "Try again"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or may have moved.",
+    "backHome": "Back to Home"
   }
 }

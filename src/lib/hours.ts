@@ -1,26 +1,6 @@
 import type { BusinessHours } from "@/types/business";
 import type { AppLocale } from "@/i18n/routing";
-
-const dayLabels: Record<AppLocale, Record<BusinessHours["day"], string>> = {
-  ms: {
-    mon: "Isnin",
-    tue: "Selasa",
-    wed: "Rabu",
-    thu: "Khamis",
-    fri: "Jumaat",
-    sat: "Sabtu",
-    sun: "Ahad",
-  },
-  en: {
-    mon: "Monday",
-    tue: "Tuesday",
-    wed: "Wednesday",
-    thu: "Thursday",
-    fri: "Friday",
-    sat: "Saturday",
-    sun: "Sunday",
-  },
-};
+import { WEEKDAY_LABELS } from "@/lib/date";
 
 function formatTime(time: string): string {
   const [hourStr, minute] = time.split(":");
@@ -56,7 +36,7 @@ export function formatHoursSummary(
   }
 
   return hours.map((h) => ({
-    label: dayLabels[locale][h.day],
+    label: WEEKDAY_LABELS[locale][h.day],
     value: h.open && h.close ? `${formatTime(h.open)} – ${formatTime(h.close)}` : closed,
   }));
 }

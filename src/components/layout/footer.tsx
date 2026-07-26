@@ -1,22 +1,27 @@
 import { MapPin, Phone, Mail } from "lucide-react";
-import { getTranslations, getLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "./container";
 import { Logo } from "./logo";
 import { getBusinessInfo } from "@/lib/content/business";
 import { formatHoursSummary } from "@/lib/hours";
-import type { AppLocale } from "@/i18n/routing";
-import { navItems } from "@/lib/nav-items";
+import { getAppLocale } from "@/i18n/locale";
+import { navItems, footerNavItems } from "@/config/navigation";
 import { InstagramIcon, FacebookIcon, TiktokIcon } from "@/components/icons/social-icons";
+import type { SocialLink } from "@/content/schemas/business";
+import type { FunctionComponent, SVGProps } from "react";
 
-const socialIcons = {
+/** Not every platform has a mark; a missing entry is skipped, no cast needed. */
+const socialIcons: Partial<
+  Record<SocialLink["platform"], FunctionComponent<SVGProps<SVGSVGElement>>>
+> = {
   instagram: InstagramIcon,
   facebook: FacebookIcon,
   tiktok: TiktokIcon,
-} as const;
+};
 
 export async function Footer() {
-  const locale = (await getLocale()) as AppLocale;
+  const locale = await getAppLocale();
   const t = await getTranslations("Footer");
   const tNav = await getTranslations("Nav");
   const tCommon = await getTranslations("Common");
@@ -32,7 +37,7 @@ export async function Footer() {
           <p className="text-muted-foreground max-w-xs text-sm">{t("tagline")}</p>
           <div className="flex gap-3 pt-1">
             {business.socials.map((social) => {
-              const Icon = socialIcons[social.platform as keyof typeof socialIcons];
+              const Icon = socialIcons[social.platform];
               if (!Icon) return null;
               return (
                 <a
@@ -55,7 +60,7 @@ export async function Footer() {
             {t("quickLinks")}
           </h3>
           <ul className="flex flex-col gap-2.5 text-sm">
-            {navItems.map((item) => (
+            {[...navItems, ...footerNavItems].map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}

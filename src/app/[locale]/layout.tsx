@@ -6,6 +6,8 @@ import { Fraunces, Inter, Noto_Naskh_Arabic } from "next/font/google";
 import { routing, type AppLocale } from "@/i18n/routing";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { SITE } from "@/config/site";
+import { metadataBase } from "@/config/seo";
 import "../globals.css";
 
 const fontSans = Inter({
@@ -40,11 +42,26 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
+    metadataBase,
     title: {
       default: t("title"),
       template: t("titleTemplate"),
     },
     description: t("description"),
+    openGraph: {
+      type: "website",
+      siteName: SITE.name,
+      title: t("title"),
+      description: t("description"),
+      locale,
+      images: [SITE.ogImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: [SITE.ogImage],
+    },
   };
 }
 

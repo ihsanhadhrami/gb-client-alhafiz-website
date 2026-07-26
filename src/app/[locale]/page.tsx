@@ -1,5 +1,4 @@
 import { setRequestLocale } from "next-intl/server";
-import type { AppLocale } from "@/i18n/routing";
 import { Hero } from "@/components/sections/hero";
 import { FeaturedCategories } from "@/components/sections/featured-categories";
 import { TrustSignals } from "@/components/sections/trust-signals";
@@ -13,7 +12,7 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  setRequestLocale(locale as AppLocale);
+  setRequestLocale(locale);
 
   return (
     <>

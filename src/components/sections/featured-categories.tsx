@@ -1,4 +1,4 @@
-import { getTranslations, getLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import {
   Droplet,
   Cherry,
@@ -11,7 +11,7 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/container";
 import { getProductCategories } from "@/lib/content/products";
 import { pickLocalized } from "@/lib/i18n-content";
-import type { AppLocale } from "@/i18n/routing";
+import { getAppLocale } from "@/i18n/locale";
 
 const categoryIcons: Record<string, LucideIcon> = {
   "arabic-perfumes": Droplet,
@@ -23,7 +23,7 @@ const categoryIcons: Record<string, LucideIcon> = {
 
 export async function FeaturedCategories() {
   const t = await getTranslations("Home");
-  const locale = (await getLocale()) as AppLocale;
+  const locale = await getAppLocale();
   const categories = getProductCategories();
 
   return (

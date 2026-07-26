@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
+import { SITE } from "@/config/site";
 
 export async function Hero() {
   const t = await getTranslations("Home");
@@ -24,10 +25,10 @@ export async function Hero() {
       <Container className="flex flex-col items-center gap-6 text-center">
         <h1 className="font-heading text-white">
           <span className="block text-6xl font-semibold tracking-tight sm:text-7xl lg:text-8xl">
-            Al Hafiz
+            {SITE.wordmark.primary}
           </span>
           <span className="block text-7xl font-normal italic sm:text-8xl lg:text-9xl">
-            Nur Al-Madinah
+            {SITE.wordmark.secondary}
           </span>
         </h1>
         <p className="max-w-2xl text-lg text-white/85 sm:text-xl">{t("heroSubtitle")}</p>
