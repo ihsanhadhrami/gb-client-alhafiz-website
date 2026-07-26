@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Stop-Process -Id 33500 -Force\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/ --max-time 3)",
+      "Bash(npm view *)",
+      "Bash(powershell -Command \"Get-Process node -ErrorAction SilentlyContinue | Select-Object Id, Path\")",
+      "Bash(npm ls *)",
+      "Bash(curl -s -o /dev/null -w \"root: %{http_code}\\\\n\" http://localhost:3000/ --max-time 5)",
+      "Bash(curl -s -o /dev/null -w \"en: %{http_code}\\\\n\" http://localhost:3000/en --max-time 5)",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp' -Filter '*.png' -Recurse -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 10 FullName, LastWriteTime\")",
+      "Read(//c/Users/User/Pictures/Screenshots/**)",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'C:\\\\Users\\\\User\\\\Desktop\\\\alhafiz-website' -Filter '*.png' -Recurse -ErrorAction SilentlyContinue | Select-Object FullName, LastWriteTime\")",
+      "Bash(powershell -Command 'Get-ChildItem -Path '\\\\''C:\\\\Users\\\\User\\\\AppData\\\\Roaming\\\\Code'\\\\'' -Filter '\\\\''*.png'\\\\'' -Recurse -ErrorAction SilentlyContinue -Depth 4 | Where-Object {$_.LastWriteTime -gt \\(Get-Date\\).AddHours\\(-2\\)} | Select-Object FullName, LastWriteTime')",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'C:\\\\Users\\\\User\\\\Downloads' -Filter '*.png' -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 5 FullName, LastWriteTime\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'C:\\\\Users\\\\User\\\\Downloads' -Filter '*ero*' -ErrorAction SilentlyContinue | Select-Object FullName, LastWriteTime\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'C:\\\\Users\\\\User\\\\Desktop' -Filter '*ero*' -Recurse -ErrorAction SilentlyContinue -Depth 2 | Select-Object FullName, LastWriteTime\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'C:\\\\Users\\\\User\\\\Pictures' -Filter '*ero*' -Recurse -ErrorAction SilentlyContinue | Select-Object FullName, LastWriteTime\")",
+      "Read(//c/Users/User/Downloads/**)",
+      "Bash(node scripts/remove-logo-bg.js)",
+      "Bash(powershell -Command \"Stop-Process -Id 36916 -Force -ErrorAction SilentlyContinue\")",
+      "Bash(git remote *)",
+      "Bash(git add *)"
+    ]
+  }
+}

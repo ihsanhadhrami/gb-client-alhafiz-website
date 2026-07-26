@@ -1,0 +1,38 @@
+{
+  "name": "Al Hafiz Nur Al-Madinah",
+  "description": {
+    "ms": "Kedai runcit premium yang menawarkan wangian Arab, kurma pilihan, makanan dan minuman Timur Tengah, hadiah serta produk Islamik di Eco Grandeur, Puncak Alam.",
+    "en": "A premium retail store offering Arabic perfumes, specialty dates, Middle Eastern foods and beverages, gifts, and Islamic goods in Eco Grandeur, Puncak Alam."
+  },
+  "address": {
+    "line1": "PLACEHOLDER — Lot No., Jalan Eco Grandeur",
+    "line2": "Eco Grandeur",
+    "city": "Puncak Alam",
+    "state": "Selangor",
+    "postcode": "42300",
+    "country": "Malaysia"
+  },
+  "geo": {
+    "lat": 3.216,
+    "lng": 101.455
+  },
+  "phone": "+60 1X-XXX XXXX",
+  "whatsapp": "+60 1X-XXX XXXX",
+  "email": "hello@alhafiznuralmadinah.com",
+  "googleMapsUrl": "https://maps.google.com/?q=Eco+Grandeur+Puncak+Alam",
+  "googleBusinessProfileUrl": "",
+  "hours": [
+    { "day": "mon", "open": "10:00", "close": "22:00" },
+    { "day": "tue", "open": "10:00", "close": "22:00" },
+    { "day": "wed", "open": "10:00", "close": "22:00" },
+    { "day": "thu", "open": "10:00", "close": "22:00" },
+    { "day": "fri", "open": "10:00", "close": "22:00" },
+    { "day": "sat", "open": "10:00", "close": "22:00" },
+    { "day": "sun", "open": "10:00", "close": "22:00" }
+  ],
+  "socials": [
+    { "platform": "instagram", "url": "https://instagram.com/alhafiznuralmadinah" },
+    { "platform": "facebook", "url": "https://facebook.com/alhafiznuralmadinah" }
+  ],
+  "priceRange": "$$"
+}

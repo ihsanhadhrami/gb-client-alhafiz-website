@@ -1,0 +1,66 @@
+{
+  "Metadata": {
+    "title": "Al Hafiz Nur Al-Madinah",
+    "titleTemplate": "%s | Al Hafiz Nur Al-Madinah",
+    "description": "Premium Arabic perfumes, specialty dates (kurma), Middle Eastern foods and beverages, and Islamic goods in Eco Grandeur, Puncak Alam, Selangor."
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "visitUs": "Visit Us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "Common": {
+    "getDirections": "Get Directions",
+    "callUs": "Call Us",
+    "whatsappUs": "WhatsApp Us",
+    "viewOnMaps": "View on Google Maps",
+    "readMore": "Read More",
+    "exploreProducts": "Explore Collections",
+    "visitStore": "Visit Store",
+    "openingHours": "Opening Hours",
+    "ourLocation": "Our Location"
+  },
+  "Home": {
+    "heroEyebrow": "Premium Retail Store",
+    "heroTitle": "Middle Eastern Authenticity, Served With Trust",
+    "heroSubtitle": "Purveyors of premium Middle Eastern goods. Discover authentic Arabic perfumes, finest dates, and curated delicacies in Eco Grandeur.",
+    "categoriesTitle": "Our Collections",
+    "categoriesSubtitle": "Carefully imported and curated for quality and authenticity.",
+    "trustTitle": "Why Al Hafiz Nur Al-Madinah",
+    "locationTitle": "Visit Our Store",
+    "locationSubtitle": "Conveniently located in Eco Grandeur, Puncak Alam, Selangor.",
+    "ctaTitle": "Experience Our Premium Quality Yourself",
+    "ctaSubtitle": "Visit our store today or reach out with any questions."
+  },
+  "Trust": {
+    "authentic": {
+      "title": "Authentic Imports",
+      "description": "Every product is imported directly from trusted sources across the Middle East."
+    },
+    "quality": {
+      "title": "Premium Quality",
+      "description": "Carefully curated to ensure the best grade and freshness."
+    },
+    "community": {
+      "title": "Trusted by the Community",
+      "description": "Proudly serving the Puncak Alam community with integrity."
+    },
+    "location": {
+      "title": "Easy to Find",
+      "description": "Conveniently located in Eco Grandeur with easy parking access."
+    }
+  },
+  "Footer": {
+    "tagline": "Arabic perfumes, premium dates & curated Islamic goods.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "Metadata": {
+    "title": "Al Hafiz Nur Al-Madinah",
+    "titleTemplate": "%s | Al Hafiz Nur Al-Madinah",
+    "description": "Wangian Arab premium, kurma pilihan, makanan dan minuman Timur Tengah serta produk Islamik di Eco Grandeur, Puncak Alam, Selangor."
+  },
+  "Nav": {
+    "home": "Utama",
+    "about": "Tentang Kami",
+    "products": "Produk",
+    "visitUs": "Kunjungi Kami",
+    "blog": "Blog",
+    "contact": "Hubungi",
+    "faq": "Soalan Lazim",
+    "menu": "Menu",
+    "close": "Tutup"
+  },
+  "Common": {
+    "getDirections": "Dapatkan Arah",
+    "callUs": "Hubungi Kami",
+    "whatsappUs": "WhatsApp Kami",
+    "viewOnMaps": "Lihat di Google Maps",
+    "readMore": "Baca Lagi",
+    "exploreProducts": "Terokai Koleksi",
+    "visitStore": "Kunjungi Kedai",
+    "openingHours": "Waktu Operasi",
+    "ourLocation": "Lokasi Kami"
+  },
+  "Home": {
+    "heroEyebrow": "Kedai Runcit Premium",
+    "heroTitle": "Keaslian Timur Tengah, Disajikan Dengan Penuh Kepercayaan",
+    "heroSubtitle": "Peniaga barangan premium Timur Tengah. Terokai wangian Arab asli, kurma terbaik dan juadah istimewa di Eco Grandeur.",
+    "categoriesTitle": "Koleksi Kami",
+    "categoriesSubtitle": "Diimport dan dipilih dengan teliti untuk kualiti serta keaslian.",
+    "trustTitle": "Mengapa Al Hafiz Nur Al-Madinah",
+    "locationTitle": "Kunjungi Kedai Kami",
+    "locationSubtitle": "Terletak strategik di Eco Grandeur, Puncak Alam, Selangor.",
+    "ctaTitle": "Alami Kualiti Premium Kami Sendiri",
+    "ctaSubtitle": "Kunjungi kedai kami hari ini atau hubungi untuk pertanyaan."
+  },
+  "Trust": {
+    "authentic": {
+      "title": "Import Asli",
+      "description": "Setiap produk diimport terus daripada sumber dipercayai di Timur Tengah."
+    },
+    "quality": {
+      "title": "Kualiti Premium",
+      "description": "Dipilih dengan teliti untuk memastikan gred dan kesegaran terbaik."
+    },
+    "community": {
+      "title": "Dipercayai Komuniti",
+      "description": "Berkhidmat kepada komuniti Puncak Alam dengan penuh integriti."
+    },
+    "location": {
+      "title": "Mudah Dijumpai",
+      "description": "Terletak strategik di Eco Grandeur dengan tempat letak kereta yang mudah."
+    }
+  },
+  "Footer": {
+    "tagline": "Wangian Arab, kurma premium & produk Islamik pilihan.",
+    "quickLinks": "Pautan Pantas",
+    "contactUs": "Hubungi Kami",
+    "followUs": "Ikuti Kami",
+    "rights": "Hak cipta terpelihara."
+  }
+}

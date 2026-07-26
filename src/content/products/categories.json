@@ -1,0 +1,113 @@
+[
+  {
+    "slug": "arabic-perfumes",
+    "name": { "ms": "Wangian Arab", "en": "Arabic Perfumes" },
+    "nameAr": "عطور عربية",
+    "description": {
+      "ms": "Attar dan minyak wangi pekat yang diimport, tahan lama serta sarat dengan watak Timur Tengah.",
+      "en": "Imported attars and concentrated oil perfumes — long-lasting and rich with Middle Eastern character."
+    },
+    "image": "",
+    "products": [
+      {
+        "slug": "oudh-al-madinah",
+        "name": { "ms": "Oudh Al-Madinah", "en": "Oudh Al-Madinah" },
+        "nameAr": "عود المدينة",
+        "description": {
+          "ms": "Wangian oudh klasik dengan ketahanan sepanjang hari.",
+          "en": "A classic oudh fragrance with all-day lasting power."
+        },
+        "image": ""
+      },
+      {
+        "slug": "misk-al-tahara",
+        "name": { "ms": "Misk Al-Tahara", "en": "Misk Al-Tahara" },
+        "nameAr": "مسك الطهارة",
+        "description": {
+          "ms": "Musk lembut dan bersih, sesuai untuk penggunaan harian.",
+          "en": "A soft, clean musk suited for everyday wear."
+        },
+        "image": ""
+      }
+    ]
+  },
+  {
+    "slug": "premium-dates",
+    "name": { "ms": "Kurma Premium", "en": "Premium Dates" },
+    "nameAr": "تمور فاخرة",
+    "description": {
+      "ms": "Kurma pilihan terus daripada ladang terbaik, segar dan berkualiti tinggi.",
+      "en": "Hand-selected dates sourced directly from top farms, fresh and premium grade."
+    },
+    "image": "",
+    "products": [
+      {
+        "slug": "kurma-ajwa",
+        "name": { "ms": "Kurma Ajwa", "en": "Ajwa Dates" },
+        "nameAr": "تمر عجوة",
+        "description": {
+          "ms": "Kurma Ajwa Madinah yang terkenal dengan kelembutan dan khasiatnya.",
+          "en": "The renowned Madinah Ajwa date, prized for its softness and benefits."
+        },
+        "image": ""
+      },
+      {
+        "slug": "kurma-safawi",
+        "name": { "ms": "Kurma Safawi", "en": "Safawi Dates" },
+        "nameAr": "تمر صفاوي",
+        "description": {
+          "ms": "Kurma gelap dan lembut dengan rasa manis yang seimbang.",
+          "en": "A dark, soft date with a well-balanced sweetness."
+        },
+        "image": ""
+      }
+    ]
+  },
+  {
+    "slug": "middle-eastern-foods",
+    "name": {
+      "ms": "Makanan & Minuman Timur Tengah",
+      "en": "Middle Eastern Foods & Beverages"
+    },
+    "nameAr": "أطعمة ومشروبات شرق أوسطية",
+    "description": {
+      "ms": "Rempah, madu, kacang dan minuman import untuk dapur bergaya Timur Tengah.",
+      "en": "Imported spices, honey, nuts and beverages for the Middle Eastern kitchen."
+    },
+    "image": "",
+    "products": [
+      {
+        "slug": "madu-sidr",
+        "name": { "ms": "Madu Sidr", "en": "Sidr Honey" },
+        "nameAr": "عسل السدر",
+        "description": {
+          "ms": "Madu tulen premium dari pokok Sidr, kaya khasiat.",
+          "en": "Premium raw honey from the Sidr tree, prized for its benefits."
+        },
+        "image": ""
+      }
+    ]
+  },
+  {
+    "slug": "islamic-products",
+    "name": { "ms": "Produk Islamik", "en": "Islamic Products" },
+    "nameAr": "منتجات إسلامية",
+    "description": {
+      "ms": "Sejadah, tasbih, Al-Quran dan keperluan ibadah harian.",
+      "en": "Prayer mats, tasbih, Qurans and everyday worship essentials."
+    },
+    "image": "",
+    "products": []
+  },
+  {
+    "slug": "gifts-specialty",
+    "name": { "ms": "Hadiah & Import Istimewa", "en": "Gifts & Specialty Imports" },
+    "nameAr": "هدايا ومستوردات مميزة",
+    "description": {
+      "ms": "Set hadiah dan barangan istimewa yang diimport, sesuai untuk sebarang majlis.",
+      "en": "Curated gift sets and specialty imports, perfect for any occasion."
+    },
+    "image": "",
+    "products": []
+  }
+]
