@@ -34,11 +34,11 @@ For dynamic routes, pass an href object, e.g.
 
 ## Structured data (JSON-LD)
 
-| Component | Schema type | Used on |
-| --- | --- | --- |
-| `LocalBusinessJsonLd` | `Store` (address, geo, hours, sameAs) | Home |
-| `FaqJsonLd` | `FAQPage` | FAQ |
-| `ArticleJsonLd` | `BlogPosting` | Blog post |
+| Component             | Schema type                           | Used on   |
+| --------------------- | ------------------------------------- | --------- |
+| `LocalBusinessJsonLd` | `Store` (address, geo, hours, sameAs) | Home      |
+| `FaqJsonLd`           | `FAQPage`                             | FAQ       |
+| `ArticleJsonLd`       | `BlogPosting`                         | Blog post |
 
 Opening hours in JSON-LD and the human-facing hours formatter share one weekday
 map (`src/lib/date.ts`) so they never diverge.

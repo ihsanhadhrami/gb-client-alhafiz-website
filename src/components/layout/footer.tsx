@@ -81,8 +81,10 @@ export async function Footer() {
             <li className="flex gap-2.5">
               <MapPin className="text-primary mt-0.5 size-4 shrink-0" />
               <span>
-                {business.address.line1}, {business.address.line2},{" "}
-                {business.address.postcode} {business.address.city},{" "}
+                {[business.address.line1, business.address.line2]
+                  .filter(Boolean)
+                  .join(", ")}
+                , {business.address.postcode} {business.address.city},{" "}
                 {business.address.state}
               </span>
             </li>

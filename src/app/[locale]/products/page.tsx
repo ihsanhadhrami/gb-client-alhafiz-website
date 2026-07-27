@@ -43,7 +43,7 @@ export default async function ProductsPage({ params }: Params) {
                   pathname: "/products/[category]",
                   params: { category: category.slug },
                 }}
-                className="group border-border bg-card hover:border-primary/40 flex flex-col gap-4 rounded-2xl border p-6 transition-colors"
+                className="group border-border/60 bg-card hover:border-primary/30 flex flex-col gap-4 rounded-2xl border p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg"
               >
                 <div className="flex items-start justify-between gap-3">
                   <h2 className="font-heading text-foreground group-hover:text-primary text-lg font-semibold">

@@ -14,14 +14,14 @@ npm run dev        # http://localhost:3000 (redirects to the default locale)
 
 ## Scripts
 
-| Script | Purpose |
-| --- | --- |
-| `npm run dev` | Local dev server |
-| `npm run build` | Production build (also runs content validation + SSG) |
-| `npm run start` | Serve the production build |
-| `npm run lint` | ESLint |
-| `npm run format` / `format:check` | Prettier write / check |
-| `npm run cf:*` | Cloudflare build/preview/deploy (see [Deployment.md](./Deployment.md)) |
+| Script                            | Purpose                                                                |
+| --------------------------------- | ---------------------------------------------------------------------- |
+| `npm run dev`                     | Local dev server                                                       |
+| `npm run build`                   | Production build (also runs content validation + SSG)                  |
+| `npm run start`                   | Serve the production build                                             |
+| `npm run lint`                    | ESLint                                                                 |
+| `npm run format` / `format:check` | Prettier write / check                                                 |
+| `npm run cf:*`                    | Cloudflare build/preview/deploy (see [Deployment.md](./Deployment.md)) |
 
 ## Conventions
 

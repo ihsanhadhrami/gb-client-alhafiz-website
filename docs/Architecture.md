@@ -45,20 +45,21 @@ path — at build time for static pages, so bad content can never ship silently.
 
 ## Folder map
 
-| Path | Responsibility |
-| --- | --- |
-| `src/app/[locale]/` | Routes. Each `page.tsx` sets the locale, builds metadata, renders sections. |
-| `src/app/[locale]/{error,loading,not-found}.tsx` | Localized error boundaries. |
-| `src/app/not-found.tsx` | Global fallback (renders its own `<html>` — no root layout exists). |
-| `src/app/{robots,sitemap}.ts` | Generated SEO endpoints. |
-| `src/config/` | Developer-owned constants: `site`, `navigation`, `seo`. |
-| `src/content/schemas/` | Zod schemas + inferred types (the shape authority). |
-| `src/content/{site,products,blog}/` | Raw content (JSON + markdown). |
-| `src/lib/content/` | Validated accessors — the CMS-swap seam. |
-| `src/lib/` | Pure helpers (`date`, `hours`, `utils`, `i18n-content`). |
-| `src/i18n/` | Routing config, navigation wrappers, locale helpers, request config. |
-| `src/components/{layout,sections,ui,seo,blog,icons}/` | Presentation. |
-| `src/types/` | Thin re-exports of schema-inferred types for import ergonomics. |
+| Path                                                  | Responsibility                                                              |
+| ----------------------------------------------------- | --------------------------------------------------------------------------- |
+| `src/app/[locale]/`                                   | Routes. Each `page.tsx` sets the locale, builds metadata, renders sections. |
+| `src/app/[locale]/{error,loading,not-found}.tsx`      | Localized error boundaries.                                                 |
+| `src/app/layout.tsx`                                  | Pass-through root layout (required by Next; `<html>` lives in `[locale]`).  |
+| `src/app/not-found.tsx`                               | Global fallback for URLs outside any locale (renders its own `<html>`).     |
+| `src/app/{robots,sitemap}.ts`                         | Generated SEO endpoints.                                                    |
+| `src/config/`                                         | Developer-owned constants: `site`, `navigation`, `seo`.                     |
+| `src/content/schemas/`                                | Zod schemas + inferred types (the shape authority).                         |
+| `src/content/{site,products,blog}/`                   | Raw content (JSON + markdown).                                              |
+| `src/lib/content/`                                    | Validated accessors — the CMS-swap seam.                                    |
+| `src/lib/`                                            | Pure helpers (`date`, `hours`, `utils`, `i18n-content`).                    |
+| `src/i18n/`                                           | Routing config, navigation wrappers, locale helpers, request config.        |
+| `src/components/{layout,sections,ui,seo,blog,icons}/` | Presentation.                                                               |
+| `src/types/`                                          | Thin re-exports of schema-inferred types for import ergonomics.             |
 
 ## config vs content — why the split
 

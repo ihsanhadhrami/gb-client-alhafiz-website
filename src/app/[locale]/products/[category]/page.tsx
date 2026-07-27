@@ -62,7 +62,7 @@ export default async function ProductCategoryPage({ params }: Params) {
           </Link>
 
           {category.products.length === 0 ? (
-            <p className="text-muted-foreground border-border bg-secondary/40 rounded-2xl border border-dashed p-8 text-center text-sm">
+            <p className="text-muted-foreground border-border/70 bg-secondary/40 rounded-2xl border border-dashed p-8 text-center text-sm">
               {t("comingSoon")}
             </p>
           ) : (
@@ -70,7 +70,7 @@ export default async function ProductCategoryPage({ params }: Params) {
               {category.products.map((product) => (
                 <article
                   key={product.slug}
-                  className="border-border bg-card flex flex-col overflow-hidden rounded-2xl border"
+                  className="border-border/60 bg-card flex flex-col overflow-hidden rounded-2xl border shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg"
                 >
                   {product.image ? (
                     <div className="relative aspect-4/3">

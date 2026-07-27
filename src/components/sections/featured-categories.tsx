@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/layout/container";
+import { Marquee } from "@/components/ui/marquee";
 import { getProductCategories } from "@/lib/content/products";
 import { pickLocalized } from "@/lib/i18n-content";
 import { getAppLocale } from "@/i18n/locale";
@@ -35,42 +36,42 @@ export async function FeaturedCategories() {
           </h2>
           <p className="text-muted-foreground mt-3">{t("categoriesSubtitle")}</p>
         </div>
-
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((category) => {
-            const Icon = categoryIcons[category.slug] ?? Gift;
-            return (
-              <Link
-                key={category.slug}
-                href={{
-                  pathname: "/products/[category]",
-                  params: { category: category.slug },
-                }}
-                className="group border-border bg-card hover:border-primary/40 flex flex-col gap-4 rounded-2xl border p-6 transition-colors"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="bg-primary/10 text-primary flex size-11 items-center justify-center rounded-full">
-                    <Icon className="size-5" />
-                  </span>
-                  {category.nameAr && (
-                    <span dir="rtl" className="font-arabic text-muted-foreground text-lg">
-                      {category.nameAr}
-                    </span>
-                  )}
-                </div>
-                <div>
-                  <h3 className="font-heading text-foreground group-hover:text-primary text-lg font-semibold">
-                    {pickLocalized(category.name, locale)}
-                  </h3>
-                  <p className="text-muted-foreground mt-1.5 text-sm">
-                    {pickLocalized(category.description, locale)}
-                  </p>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
       </Container>
+
+      <Marquee durationSeconds={45}>
+        {categories.map((category) => {
+          const Icon = categoryIcons[category.slug] ?? Gift;
+          return (
+            <Link
+              key={category.slug}
+              href={{
+                pathname: "/products/[category]",
+                params: { category: category.slug },
+              }}
+              className="group border-border/60 bg-card hover:border-primary/30 flex w-72 shrink-0 flex-col gap-4 rounded-2xl border p-6 shadow-sm transition-colors hover:shadow-lg"
+            >
+              <div className="flex items-center justify-between">
+                <span className="bg-primary/10 text-primary flex size-11 items-center justify-center rounded-full">
+                  <Icon className="size-5" />
+                </span>
+                {category.nameAr && (
+                  <span dir="rtl" className="font-arabic text-muted-foreground text-lg">
+                    {category.nameAr}
+                  </span>
+                )}
+              </div>
+              <div>
+                <h3 className="font-heading text-foreground group-hover:text-primary text-lg font-semibold">
+                  {pickLocalized(category.name, locale)}
+                </h3>
+                <p className="text-muted-foreground mt-1.5 line-clamp-3 text-sm">
+                  {pickLocalized(category.description, locale)}
+                </p>
+              </div>
+            </Link>
+          );
+        })}
+      </Marquee>
     </section>
   );
 }

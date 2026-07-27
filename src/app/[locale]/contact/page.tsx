@@ -74,7 +74,7 @@ export default async function ContactPage({ params }: Params) {
                 href={href}
                 target={key === "email" ? undefined : "_blank"}
                 rel="noopener noreferrer"
-                className="group border-border bg-card hover:border-primary/40 flex flex-col gap-3 rounded-2xl border p-6 transition-colors"
+                className="group border-border/60 bg-card hover:border-primary/30 flex flex-col gap-3 rounded-2xl border p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg"
               >
                 <span className="bg-primary/10 text-primary flex size-11 items-center justify-center rounded-full">
                   <Icon className="size-5" />

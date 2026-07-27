@@ -4,12 +4,12 @@ How content is stored, validated, and consumed — and how to migrate to a CMS l
 
 ## Where content lives
 
-| Content | File(s) | Schema | Accessor |
-| --- | --- | --- | --- |
-| Business info | `src/content/site/business.json` | `schemas/business.ts` | `lib/content/business.ts` |
-| Product categories | `src/content/products/categories.json` | `schemas/product.ts` | `lib/content/products.ts` |
-| FAQ | `src/content/site/faq.json` | `schemas/faq.ts` | `lib/content/faq.ts` |
-| Blog posts | `src/content/blog/{locale}/*.md` | `schemas/blog.ts` | `lib/content/blog.ts` |
+| Content            | File(s)                                | Schema                | Accessor                  |
+| ------------------ | -------------------------------------- | --------------------- | ------------------------- |
+| Business info      | `src/content/site/business.json`       | `schemas/business.ts` | `lib/content/business.ts` |
+| Product categories | `src/content/products/categories.json` | `schemas/product.ts`  | `lib/content/products.ts` |
+| FAQ                | `src/content/site/faq.json`            | `schemas/faq.ts`      | `lib/content/faq.ts`      |
+| Blog posts         | `src/content/blog/{locale}/*.md`       | `schemas/blog.ts`     | `lib/content/blog.ts`     |
 
 UI copy that isn't "data" (headings, labels, button text) lives in the message
 catalogs `messages/{en,ms}.json`, not in content files.
@@ -45,12 +45,12 @@ Create `src/content/blog/<locale>/<slug>.md` with frontmatter:
 ```yaml
 ---
 title: "Post title"
-date: "2026-07-01"        # ISO date
+date: "2026-07-01" # ISO date
 excerpt: "One–two sentence summary."
-coverImage: ""            # /public path, or "" for none
-tags: [dates, madinah]    # related posts share tags
-category: "Guides"        # optional
-draft: false              # true = hidden in production
+coverImage: "" # /public path, or "" for none
+tags: [dates, madinah] # related posts share tags
+category: "Guides" # optional
+draft: false # true = hidden in production
 ---
 ```
 

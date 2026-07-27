@@ -5,11 +5,11 @@ The site is built with Next.js and deployed to **Cloudflare Workers** via
 
 ## Relevant files
 
-| File | Role |
-| --- | --- |
-| `open-next.config.ts` | OpenNext adapter configuration |
-| `wrangler.jsonc` | Cloudflare Worker config (name, assets binding, compat flags) |
-| `next.config.ts` | Next.js config (`next-intl` plugin, image formats) |
+| File                  | Role                                                          |
+| --------------------- | ------------------------------------------------------------- |
+| `open-next.config.ts` | OpenNext adapter configuration                                |
+| `wrangler.jsonc`      | Cloudflare Worker config (name, assets binding, compat flags) |
+| `next.config.ts`      | Next.js config (`next-intl` plugin, image formats)            |
 
 `wrangler.jsonc` uses `nodejs_compat` and serves the built assets from
 `.open-next/assets`. Both `.open-next/` and `.wrangler/` are git-ignored.

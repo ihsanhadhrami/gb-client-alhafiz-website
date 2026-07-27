@@ -12,7 +12,7 @@ export async function PostCard({ post }: { post: BlogPostSummary }) {
   return (
     <Link
       href={{ pathname: "/blog/[slug]", params: { slug: post.slug } }}
-      className="group border-border bg-card hover:border-primary/40 flex flex-col overflow-hidden rounded-2xl border transition-colors"
+      className="group border-border/60 bg-card hover:border-primary/30 flex flex-col overflow-hidden rounded-2xl border shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg"
     >
       {post.coverImage ? (
         <div className="relative aspect-16/9">

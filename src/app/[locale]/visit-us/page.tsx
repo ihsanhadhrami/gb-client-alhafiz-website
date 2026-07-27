@@ -29,7 +29,7 @@ export default async function VisitUsPage({ params }: Params) {
     <>
       <PageHeader title={t("title")} subtitle={t("subtitle")} />
 
-      <LocationSection />
+      <LocationSection showHeading={false} />
 
       <section className="border-border/60 border-t py-14">
         <Container className="flex flex-col items-center gap-3 text-center">
