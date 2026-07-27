@@ -10,24 +10,71 @@
     "image": "",
     "products": [
       {
-        "slug": "oudh-al-madinah",
-        "name": { "ms": "Oudh Al-Madinah", "en": "Oudh Al-Madinah" },
-        "nameAr": "عود المدينة",
+        "slug": "sama-dubai",
+        "name": { "ms": "Sama Dubai", "en": "Sama Dubai" },
+        "nameAr": "سماء دبي",
         "description": {
-          "ms": "Wangian oudh klasik dengan ketahanan sepanjang hari.",
-          "en": "A classic oudh fragrance with all-day lasting power."
+          "ms": "Eau de Parfum yang tegas dan tahan lama dengan watak yang kaya serta misteri — 100ml.",
+          "en": "A bold, long-lasting Eau de Parfum with a rich, mysterious character — 100ml."
         },
-        "image": ""
+        "image": "/images/perfumes/sama-dubai.jpg"
       },
       {
-        "slug": "misk-al-tahara",
-        "name": { "ms": "Misk Al-Tahara", "en": "Misk Al-Tahara" },
-        "nameAr": "مسك الطهارة",
+        "slug": "mayar-cherry-intense",
+        "name": { "ms": "Mayar — Cherry Intense", "en": "Mayar — Cherry Intense" },
+        "nameAr": "ميار",
         "description": {
-          "ms": "Musk lembut dan bersih, sesuai untuk penggunaan harian.",
-          "en": "A soft, clean musk suited for everyday wear."
+          "ms": "Eau de Parfum intense beraroma buah oleh Lattafa — 100ml.",
+          "en": "An intense, fruity-oriental Eau de Parfum by Lattafa — 100ml."
         },
-        "image": ""
+        "image": "/images/perfumes/mayar-cherry-intense.jpg"
+      },
+      {
+        "slug": "mayar-natural-intense",
+        "name": { "ms": "Mayar — Natural Intense", "en": "Mayar — Natural Intense" },
+        "nameAr": "ميار",
+        "description": {
+          "ms": "Eau de Parfum lembut dan tulen oleh Lattafa — 100ml.",
+          "en": "A soft, natural-toned Eau de Parfum by Lattafa — 100ml."
+        },
+        "image": "/images/perfumes/mayar-natural-intense.jpg"
+      },
+      {
+        "slug": "oud-24-hours",
+        "name": { "ms": "Oud 24 Hours", "en": "Oud 24 Hours" },
+        "nameAr": "عود ٢٤ ساعة",
+        "description": {
+          "ms": "Wangian oud yang tahan sepanjang hari — 100ml.",
+          "en": "A rich oud Eau de Parfum built to last all day — 100ml."
+        },
+        "image": "/images/perfumes/oud-24-hours.jpg"
+      },
+      {
+        "slug": "your-touch-amber",
+        "name": { "ms": "Your Touch — Amber", "en": "Your Touch — Amber" },
+        "description": {
+          "ms": "Eau de Parfum amber yang hangat oleh Maison Alhambra — 100ml.",
+          "en": "A warm amber Eau de Parfum by Maison Alhambra — 100ml."
+        },
+        "image": "/images/perfumes/your-touch-amber.jpg"
+      },
+      {
+        "slug": "your-touch-tobacco",
+        "name": { "ms": "Your Touch — Tobacco", "en": "Your Touch — Tobacco" },
+        "description": {
+          "ms": "Eau de Parfum tembakau yang kaya oleh Maison Alhambra — 100ml.",
+          "en": "A rich tobacco Eau de Parfum by Maison Alhambra — 100ml."
+        },
+        "image": "/images/perfumes/your-touch-tobacco.jpg"
+      },
+      {
+        "slug": "glacier-ultra",
+        "name": { "ms": "Glacier Ultra", "en": "Glacier Ultra" },
+        "description": {
+          "ms": "Eau de Parfum segar dan sejuk oleh Maison Alhambra.",
+          "en": "A fresh, cool-toned Eau de Parfum by Maison Alhambra."
+        },
+        "image": "/images/perfumes/glacier-ultra.jpg"
       }
     ]
   },

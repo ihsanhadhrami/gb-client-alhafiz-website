@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
 import { PageHeader } from "@/components/layout/page-header";
 import { Container } from "@/components/layout/container";
+import { FeaturedProduct } from "@/components/products/featured-product";
+import { ProductCard } from "@/components/products/product-card";
 import { Link } from "@/i18n/navigation";
 import { buildPageMetadata } from "@/config/seo";
 import {
@@ -66,45 +67,25 @@ export default async function ProductCategoryPage({ params }: Params) {
               {t("comingSoon")}
             </p>
           ) : (
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {category.products.map((product) => (
-                <article
-                  key={product.slug}
-                  className="border-border/60 bg-card flex flex-col overflow-hidden rounded-2xl border shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                >
-                  {product.image ? (
-                    <div className="relative aspect-4/3">
-                      <Image
-                        src={product.image}
-                        alt={pickLocalized(product.name, activeLocale)}
-                        fill
-                        sizes="(min-width: 1024px) 320px, (min-width: 640px) 45vw, 90vw"
-                        className="object-cover"
-                      />
-                    </div>
-                  ) : (
-                    <div className="bg-secondary/50 aspect-4/3" aria-hidden />
-                  )}
-                  <div className="flex flex-col gap-1.5 p-5">
-                    <div className="flex items-start justify-between gap-2">
-                      <h2 className="font-heading text-foreground text-base font-semibold">
-                        {pickLocalized(product.name, activeLocale)}
-                      </h2>
-                      {product.nameAr && (
-                        <span
-                          dir="rtl"
-                          className="font-arabic text-muted-foreground text-sm"
-                        >
-                          {product.nameAr}
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-muted-foreground text-sm">
-                      {pickLocalized(product.description, activeLocale)}
-                    </p>
-                  </div>
-                </article>
-              ))}
+            <div className="flex flex-col gap-10">
+              {/* The first product is the category's lead pick — shown larger, on its own. */}
+              <FeaturedProduct
+                product={category.products[0]}
+                locale={activeLocale}
+                label={t("featured")}
+              />
+
+              {category.products.length > 1 && (
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {category.products.slice(1).map((product) => (
+                    <ProductCard
+                      key={product.slug}
+                      product={product}
+                      locale={activeLocale}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </Container>

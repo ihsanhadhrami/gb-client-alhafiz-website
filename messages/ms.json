@@ -79,7 +79,8 @@
   "ProductCategory": {
     "backToProducts": "Semua koleksi",
     "comingSoon": "Barangan dalam koleksi ini akan datang. Kunjungi kedai kami atau hubungi untuk pertanyaan.",
-    "inThisCollection": "Dalam koleksi ini"
+    "inThisCollection": "Dalam koleksi ini",
+    "featured": "Pilihan Utama"
   },
   "VisitUs": {
     "metaTitle": "Kunjungi Kami",

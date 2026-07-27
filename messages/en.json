@@ -79,7 +79,8 @@
   "ProductCategory": {
     "backToProducts": "All collections",
     "comingSoon": "Products in this collection are coming soon. Visit our store or contact us to enquire.",
-    "inThisCollection": "In this collection"
+    "inThisCollection": "In this collection",
+    "featured": "Featured"
   },
   "VisitUs": {
     "metaTitle": "Visit Us",
