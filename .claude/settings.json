@@ -71,7 +71,11 @@
       "Bash(ffmpeg -version)",
       "Bash(node -e \"console.log\\(require\\('ffmpeg-static'\\)\\)\")",
       "Bash(mkdir -p __TRACKED_VAR__/frames)",
-      "Bash(./node_modules/ffmpeg-static/ffmpeg.exe -i 'public/images/hero/Recording 2026-07-27 204445.mp4' -vf fps=1,scale=900:-1 __TRACKED_VAR__/frames/f%02d.png -y)"
+      "Bash(./node_modules/ffmpeg-static/ffmpeg.exe -i 'public/images/hero/Recording 2026-07-27 204445.mp4' -vf fps=1,scale=900:-1 __TRACKED_VAR__/frames/f%02d.png -y)",
+      "Bash(git commit *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000/en/contact -o /tmp/contact2.html -w \"status: %{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:3000/en)"
     ],
     "additionalDirectories": [
       "\\tmp"

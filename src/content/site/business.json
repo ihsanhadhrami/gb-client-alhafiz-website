@@ -30,8 +30,12 @@
     { "day": "sun", "open": "11:00", "close": "23:30" }
   ],
   "socials": [
-    { "platform": "instagram", "url": "https://instagram.com/alhafiznuralmadinah" },
-    { "platform": "facebook", "url": "https://facebook.com/alhafiznuralmadinah" }
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/alhafiznuralmadinah/"
+    },
+    { "platform": "facebook", "url": "https://www.facebook.com/share/1CqQ6pe5oH/" },
+    { "platform": "threads", "url": "https://www.threads.com/@alhafiznuralmadinah" }
   ],
   "priceRange": "$$"
 }

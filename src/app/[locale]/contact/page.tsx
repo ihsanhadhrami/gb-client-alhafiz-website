@@ -6,7 +6,12 @@ import { PageHeader } from "@/components/layout/page-header";
 import { Container } from "@/components/layout/container";
 import { buildPageMetadata } from "@/config/seo";
 import { getBusinessInfo } from "@/lib/content/business";
-import { InstagramIcon, FacebookIcon, TiktokIcon } from "@/components/icons/social-icons";
+import {
+  InstagramIcon,
+  FacebookIcon,
+  ThreadsIcon,
+  TiktokIcon,
+} from "@/components/icons/social-icons";
 import type { SocialLink } from "@/content/schemas/business";
 
 type Params = { params: Promise<{ locale: string }> };
@@ -16,6 +21,7 @@ const socialIcons: Partial<
 > = {
   instagram: InstagramIcon,
   facebook: FacebookIcon,
+  threads: ThreadsIcon,
   tiktok: TiktokIcon,
 };
 

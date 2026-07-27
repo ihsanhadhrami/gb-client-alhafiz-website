@@ -7,7 +7,12 @@ import { getBusinessInfo } from "@/lib/content/business";
 import { formatHoursSummary } from "@/lib/hours";
 import { getAppLocale } from "@/i18n/locale";
 import { navItems, footerNavItems } from "@/config/navigation";
-import { InstagramIcon, FacebookIcon, TiktokIcon } from "@/components/icons/social-icons";
+import {
+  InstagramIcon,
+  FacebookIcon,
+  ThreadsIcon,
+  TiktokIcon,
+} from "@/components/icons/social-icons";
 import type { SocialLink } from "@/content/schemas/business";
 import type { FunctionComponent, SVGProps } from "react";
 
@@ -17,6 +22,7 @@ const socialIcons: Partial<
 > = {
   instagram: InstagramIcon,
   facebook: FacebookIcon,
+  threads: ThreadsIcon,
   tiktok: TiktokIcon,
 };
 

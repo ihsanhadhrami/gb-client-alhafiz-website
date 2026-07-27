@@ -12,7 +12,7 @@ export const businessHoursSchema = z.object({
 });
 
 export const socialLinkSchema = z.object({
-  platform: z.enum(["instagram", "facebook", "tiktok", "whatsapp"]),
+  platform: z.enum(["instagram", "facebook", "threads", "tiktok", "whatsapp"]),
   url: z.url(),
 });
 
