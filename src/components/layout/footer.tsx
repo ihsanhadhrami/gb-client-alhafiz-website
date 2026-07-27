@@ -5,6 +5,7 @@ import { Container } from "./container";
 import { Logo } from "./logo";
 import { getBusinessInfo } from "@/lib/content/business";
 import { formatHoursSummary } from "@/lib/hours";
+import { telHref, mailtoHref } from "@/lib/contact-links";
 import { getAppLocale } from "@/i18n/locale";
 import { navItems, footerNavItems } from "@/config/navigation";
 import {
@@ -96,13 +97,13 @@ export async function Footer() {
             </li>
             <li className="flex gap-2.5">
               <Phone className="text-primary size-4 shrink-0" />
-              <a href={`tel:${business.phone}`} className="hover:text-foreground">
+              <a href={telHref(business.phone)} className="hover:text-foreground">
                 {business.phone}
               </a>
             </li>
             <li className="flex gap-2.5">
               <Mail className="text-primary size-4 shrink-0" />
-              <a href={`mailto:${business.email}`} className="hover:text-foreground">
+              <a href={mailtoHref(business.email)} className="hover:text-foreground">
                 {business.email}
               </a>
             </li>

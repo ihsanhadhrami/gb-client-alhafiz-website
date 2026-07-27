@@ -5,6 +5,7 @@ import { Container } from "@/components/layout/container";
 import { Button } from "@/components/ui/button";
 import { getBusinessInfo } from "@/lib/content/business";
 import { formatHoursSummary } from "@/lib/hours";
+import { telHref } from "@/lib/contact-links";
 import { getAppLocale } from "@/i18n/locale";
 
 /**
@@ -61,6 +62,7 @@ export async function LocationSection({ showHeading = true }: { showHeading?: bo
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Button
+                nativeButton={false}
                 render={
                   <a
                     href={business.googleMapsUrl}
@@ -72,7 +74,11 @@ export async function LocationSection({ showHeading = true }: { showHeading?: bo
                 <Navigation className="size-4" />
                 {tCommon("getDirections")}
               </Button>
-              <Button render={<a href={`tel:${business.phone}`} />} variant="outline">
+              <Button
+                nativeButton={false}
+                render={<a href={telHref(business.phone)} />}
+                variant="outline"
+              >
                 {tCommon("callUs")}
               </Button>
             </div>

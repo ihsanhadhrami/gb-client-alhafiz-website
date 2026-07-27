@@ -41,6 +41,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <LocaleSwitcher />
           <Button
+            nativeButton={false}
             render={<Link href="/visit-us" />}
             size="sm"
             className="hidden sm:inline-flex"

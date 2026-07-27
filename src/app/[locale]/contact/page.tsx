@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/layout/page-header";
 import { Container } from "@/components/layout/container";
 import { buildPageMetadata } from "@/config/seo";
 import { getBusinessInfo } from "@/lib/content/business";
+import { telHref, whatsappHref, mailtoHref } from "@/lib/contact-links";
 import {
   InstagramIcon,
   FacebookIcon,
@@ -41,7 +42,6 @@ export default async function ContactPage({ params }: Params) {
   setRequestLocale(locale);
   const t = await getTranslations("Contact");
   const business = getBusinessInfo();
-  const waNumber = business.whatsapp.replace(/\D/g, "");
 
   const methods = [
     {
@@ -49,21 +49,21 @@ export default async function ContactPage({ params }: Params) {
       icon: Phone,
       label: t("phoneLabel"),
       value: business.phone,
-      href: `tel:${business.phone.replace(/\s/g, "")}`,
+      href: telHref(business.phone),
     },
     {
       key: "whatsapp",
       icon: MessageCircle,
       label: t("whatsappLabel"),
       value: business.whatsapp,
-      href: `https://wa.me/${waNumber}`,
+      href: whatsappHref(business.whatsapp),
     },
     {
       key: "email",
       icon: Mail,
       label: t("emailLabel"),
       value: business.email,
-      href: `mailto:${business.email}`,
+      href: mailtoHref(business.email),
     },
   ];
 

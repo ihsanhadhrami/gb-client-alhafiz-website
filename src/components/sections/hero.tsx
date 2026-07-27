@@ -34,6 +34,7 @@ export async function Hero() {
         <p className="max-w-2xl text-lg text-white/85 sm:text-xl">{t("heroSubtitle")}</p>
         <div className="flex flex-col gap-3 pt-2 sm:flex-row">
           <Button
+            nativeButton={false}
             render={<Link href="/products" />}
             size="lg"
             className="bg-gold text-gold-foreground hover:bg-gold/90"
@@ -42,6 +43,7 @@ export async function Hero() {
             <ArrowRight className="size-4" />
           </Button>
           <Button
+            nativeButton={false}
             render={<Link href="/visit-us" />}
             size="lg"
             variant="outline"

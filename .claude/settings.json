@@ -75,7 +75,10 @@
       "Bash(git commit *)",
       "Bash(npm run *)",
       "Bash(curl -s http://localhost:3000/en/contact -o /tmp/contact2.html -w \"status: %{http_code}\\\\n\")",
-      "Bash(curl -s http://localhost:3000/en)"
+      "Bash(curl -s http://localhost:3000/en)",
+      "Bash(curl -s http://localhost:3000/en/visit-us -o /tmp/vu.html -w \"status: %{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:3000/en/visit-us -o /tmp/vu2.html -w \"status: %{http_code}\\\\n\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/en/visit-us)"
     ],
     "additionalDirectories": [
       "\\tmp"

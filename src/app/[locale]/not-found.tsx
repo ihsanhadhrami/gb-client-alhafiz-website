@@ -13,7 +13,7 @@ export default async function NotFound() {
         {t("title")}
       </h1>
       <p className="text-muted-foreground max-w-md">{t("description")}</p>
-      <Button render={<Link href="/" />} className="mt-2">
+      <Button nativeButton={false} render={<Link href="/" />} className="mt-2">
         {t("backHome")}
       </Button>
     </Container>
